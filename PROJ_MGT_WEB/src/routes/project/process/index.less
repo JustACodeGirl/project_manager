@@ -1,0 +1,29 @@
+// {commentsVisible.indexOf(title.id) < 0 && <Icon style={{ marginLeft: 10 }} type="down" onClick={showComments} />}
+// {commentsVisible.indexOf(title.id) >= 0 && <Icon style={{ marginLeft: 10 }} type="up" onClick={hideComments} />}
+.content {
+  line-height: 2.4;
+  font-size: 13px;
+
+  .item {
+    display: flex;
+
+    & > div {
+      &:first-child {
+        width: 100px;
+      }
+    }
+  }
+}
+
+.timelineItem {
+  & > div {
+    &:nth-child(2) {
+      margin-top: 8px;
+    }
+  }
+}
+
+.addButton {
+  margin-top: 10px;
+  margin-left: 2%;
+}

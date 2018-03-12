@@ -1,0 +1,58 @@
+.query {
+  .simple {
+    margin-bottom: 15px;
+    .group {
+      position: relative;
+      display: inline-block;
+      width: 480px;
+      input {
+        max-width: 300px;
+      }
+      button {
+        margin-left: 5px;
+      }
+      :global {
+        .anticon-cross {
+          position: absolute;
+          width: 18px;
+          height: 18px;
+          right: 185px;
+          cursor: pointer;
+          color: #fff;
+          line-height: 18px;
+          border-radius: 50%!important;
+          background-color: rgba(0, 0, 0, .16);
+          top: 7px;
+        }
+      }
+    }
+  }
+  .advance {
+    margin-bottom: 10px;
+    text-align: center;
+    min-width: 593px;
+    background-color: #f7f7f7;
+    padding: 10px;
+    border-radius: 4px;
+
+    input {
+      display: inline-block;
+      max-width: 300px;
+    }
+    :global {
+      .ant-input-group-compact {
+        margin-bottom: 5px;
+      }
+      .ant-input-group-compact:first-child {
+        padding-left: 49px;
+      }
+      .search {
+        margin-top: 10px;
+        text-align: right;
+        button{
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}

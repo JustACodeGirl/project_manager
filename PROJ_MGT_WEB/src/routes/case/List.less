@@ -1,0 +1,109 @@
+.progress {
+  width: 60px;
+}
+
+.table {
+  td.avatar {
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  :global {
+    .ant-table-bordered {
+      border-left: 1px solid #DCDCDC;
+      border-top: 1px solid #DCDCDC;
+      border-bottom: 1px solid #DCDCDC;
+    }
+    .ant-table-tbody > tr > td,
+    .ant-table-thead > tr > th {
+      height: 41px;
+      border-right: 1px solid #DCDCDC;
+      border-bottom: 1px solid #DCDCDC;
+    }
+    .ant-pagination.mini .ant-pagination-item {
+      min-width: 25px;
+      height: 25px;
+      line-height: 25px;
+    }
+  }
+
+  &.motion {
+    :global {
+      .ant-table-tbody > tr > td,
+      .ant-table-thead > tr > th {
+        &:nth-child(1) {
+          width: 6%;
+        }
+
+        &:nth-child(2) {
+          width: 8%;
+        }
+
+        &:nth-child(3) {
+          width: 8%;
+        }
+
+        &:nth-child(4) {
+          width: 6%;
+        }
+
+        &:nth-child(5) {
+          width: 6%;
+        }
+
+        &:nth-child(6) {
+          width: 8%;
+        }
+
+        &:nth-child(7) {
+          width: 16%;
+        }
+
+        &:nth-child(8) {
+          width: 20%;
+        }
+
+        &:nth-child(9) {
+          width: 14%;
+        }
+
+        &:nth-child(10) {
+          width: 8%;
+        }
+      }
+
+      .ant-table-thead {
+        & > tr {
+          transition: none;
+          display: block;
+
+          & > th {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+
+      .ant-table-tbody {
+        & > tr {
+          transition: none;
+          display: block;
+          border-bottom: 1px solid #DCDCDC;
+
+          & > td {
+            border-bottom: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+          &.ant-table-expanded-row-level-1 > td {
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}

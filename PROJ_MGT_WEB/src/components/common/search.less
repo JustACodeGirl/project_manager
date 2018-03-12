@@ -1,0 +1,36 @@
+@import "../vars.less";
+
+.no-highlight() {
+  border-color: #e5e5e5;
+  box-shadow: none;
+}
+
+.btnEdit {
+  color: #fff;
+  background-color: lighten(@success-color, 10%);
+  border-color: lighten(@success-color, 10%);
+
+  &:hover {
+    color: #fff;
+    background-color: lighten(@success-color, 15%);
+    border-color: lighten(@success-color, 15%);
+  }
+}
+
+.search {
+  :global {
+    .anticon-cross {
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      right: 154px;
+      cursor: pointer;
+      color: #fff;
+      line-height: 18px;
+      border-radius: 50%!important;
+      background-color: rgba(0, 0, 0, .16);
+      top: 7px;
+      // opacity:
+    }
+  }
+}
